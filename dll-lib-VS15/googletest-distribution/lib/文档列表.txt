@@ -1,0 +1,4 @@
+gmock-gd.lib
+gmock_main-gd.lib
+gtest-gd.lib
+gtest_main-gd.lib

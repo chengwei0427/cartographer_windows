@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\kalman_filter">
+      <UniqueIdentifier>{292c7ac9-540d-4750-8946-d8a656ff73a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\kalman_filter\proto">
+      <UniqueIdentifier>{61c37193-f744-44eb-a442-b899936d02f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\transform">
+      <UniqueIdentifier>{8815e8ad-3c97-44de-9572-18f7d4a0b0a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\transform\proto">
+      <UniqueIdentifier>{6ed2d1e5-d0cd-4669-9932-c489af1606a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sensor">
+      <UniqueIdentifier>{891a6f01-3d7a-472e-81b8-a7d43f9f0e25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sensor\proto">
+      <UniqueIdentifier>{6e580416-0233-49ff-9c08-bc8c749a17d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\mapping_2d">
+      <UniqueIdentifier>{5462ec25-5f1f-4331-a31e-109923d34e41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\mapping_2d\proto">
+      <UniqueIdentifier>{7f68b234-800a-45cc-92aa-fd01224ffe5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\mapping_2d\scan_matching">
+      <UniqueIdentifier>{e1d060dd-c236-4538-848c-006789130d08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\mapping_2d\scan_matching\proto">
+      <UniqueIdentifier>{212a3a10-d728-4102-b358-5f9b19c03bd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\mapping_2d\sparse_pose_graph">
+      <UniqueIdentifier>{1f52c1d9-5e81-46c5-9789-fe1438fc4556}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common">
+      <UniqueIdentifier>{93000f05-582d-40d8-8f54-2c38781cbefa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\proto">
+      <UniqueIdentifier>{fd8b8900-c697-4d38-b32d-df9b61de4536}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\mapping">
+      <UniqueIdentifier>{17c16893-f2fd-47d0-b4bf-5a861728c71c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\mapping\proto">
+      <UniqueIdentifier>{cc3ffa18-bfac-4e5b-b816-7dd0a2c7c717}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\mapping\sparse_pose_graph">
+      <UniqueIdentifier>{e7875356-0c54-4bd0-acce-323dff4831e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\mapping\sparse_pose_graph\proto">
+      <UniqueIdentifier>{738dd5f1-1f5b-4796-b629-8ccd5b965c37}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ptCarto.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\kalman_filter\pose_tracker.cc">
+      <Filter>Source Files\kalman_filter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\kalman_filter\proto\pose_tracker_options.pb.cc">
+      <Filter>Source Files\kalman_filter\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\transform\rigid_transform.cc">
+      <Filter>Source Files\transform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\transform\transform.cc">
+      <Filter>Source Files\transform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\transform\transform_interpolation_buffer.cc">
+      <Filter>Source Files\transform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\transform\proto\transform.pb.cc">
+      <Filter>Source Files\transform\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\sensor\proto\adaptive_voxel_filter_options.pb.cc">
+      <Filter>Source Files\sensor\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\sensor\proto\configuration.pb.cc">
+      <Filter>Source Files\sensor\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\sensor\proto\sensor.pb.cc">
+      <Filter>Source Files\sensor\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\sensor\collator.cc">
+      <Filter>Source Files\sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\sensor\compressed_point_cloud.cc">
+      <Filter>Source Files\sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\sensor\configuration.cc">
+      <Filter>Source Files\sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\sensor\ordered_multi_queue.cc">
+      <Filter>Source Files\sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\sensor\point_cloud.cc">
+      <Filter>Source Files\sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\sensor\range_data.cc">
+      <Filter>Source Files\sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\sensor\voxel_filter.cc">
+      <Filter>Source Files\sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping_2d\global_trajectory_builder.cc">
+      <Filter>Source Files\mapping_2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping_2d\local_trajectory_builder.cc">
+      <Filter>Source Files\mapping_2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping_2d\range_data_inserter.cc">
+      <Filter>Source Files\mapping_2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping_2d\ray_casting.cc">
+      <Filter>Source Files\mapping_2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping_2d\sparse_pose_graph.cc">
+      <Filter>Source Files\mapping_2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping_2d\submaps.cc">
+      <Filter>Source Files\mapping_2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping_2d\proto\cell_limits.pb.cc">
+      <Filter>Source Files\mapping_2d\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping_2d\proto\local_trajectory_builder_options.pb.cc">
+      <Filter>Source Files\mapping_2d\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping_2d\proto\probability_grid.pb.cc">
+      <Filter>Source Files\mapping_2d\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping_2d\proto\range_data_inserter_options.pb.cc">
+      <Filter>Source Files\mapping_2d\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping_2d\proto\submaps_options.pb.cc">
+      <Filter>Source Files\mapping_2d\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping_2d\scan_matching\ceres_scan_matcher.cc">
+      <Filter>Source Files\mapping_2d\scan_matching</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping_2d\scan_matching\correlative_scan_matcher.cc">
+      <Filter>Source Files\mapping_2d\scan_matching</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping_2d\scan_matching\fast_correlative_scan_matcher.cc">
+      <Filter>Source Files\mapping_2d\scan_matching</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping_2d\scan_matching\fast_global_localizer.cc">
+      <Filter>Source Files\mapping_2d\scan_matching</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping_2d\scan_matching\real_time_correlative_scan_matcher.cc">
+      <Filter>Source Files\mapping_2d\scan_matching</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping_2d\scan_matching\proto\ceres_scan_matcher_options.pb.cc">
+      <Filter>Source Files\mapping_2d\scan_matching\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping_2d\scan_matching\proto\fast_correlative_scan_matcher_options.pb.cc">
+      <Filter>Source Files\mapping_2d\scan_matching\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping_2d\scan_matching\proto\real_time_correlative_scan_matcher_options.pb.cc">
+      <Filter>Source Files\mapping_2d\scan_matching\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping_2d\sparse_pose_graph\constraint_builder.cc">
+      <Filter>Source Files\mapping_2d\sparse_pose_graph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping_2d\sparse_pose_graph\optimization_problem.cc">
+      <Filter>Source Files\mapping_2d\sparse_pose_graph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\common\ceres_solver_options.cc">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\common\configuration_file_resolver.cc">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\common\fixed_ratio_sampler.cc">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\common\histogram.cc">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\common\lua_parameter_dictionary.cc">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\common\thread_pool.cc">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\common\time.cc">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\common\proto\ceres_solver_options.pb.cc">
+      <Filter>Source Files\common\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping\collated_trajectory_builder.cc">
+      <Filter>Source Files\mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping\detect_floors.cc">
+      <Filter>Source Files\mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping\imu_tracker.cc">
+      <Filter>Source Files\mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping\map_builder.cc">
+      <Filter>Source Files\mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping\odometry_state_tracker.cc">
+      <Filter>Source Files\mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping\probability_values.cc">
+      <Filter>Source Files\mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping\trajectory_builder.cc">
+      <Filter>Source Files\mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping\trajectory_connectivity.cc">
+      <Filter>Source Files\mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping\proto\map_builder_options.pb.cc">
+      <Filter>Source Files\mapping\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping\proto\sparse_pose_graph.pb.cc">
+      <Filter>Source Files\mapping\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping\proto\sparse_pose_graph_options.pb.cc">
+      <Filter>Source Files\mapping\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping\proto\submap_visualization.pb.cc">
+      <Filter>Source Files\mapping\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping\proto\trajectory.pb.cc">
+      <Filter>Source Files\mapping\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping\proto\trajectory_builder_options.pb.cc">
+      <Filter>Source Files\mapping\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping\proto\trajectory_connectivity.pb.cc">
+      <Filter>Source Files\mapping\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping\sparse_pose_graph\optimization_problem_options.cc">
+      <Filter>Source Files\mapping\sparse_pose_graph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping\sparse_pose_graph\proto\constraint_builder_options.pb.cc">
+      <Filter>Source Files\mapping\sparse_pose_graph\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping\sparse_pose_graph\proto\optimization_problem_options.pb.cc">
+      <Filter>Source Files\mapping\sparse_pose_graph\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping_2d\motion_filter.cc">
+      <Filter>Source Files\mapping_2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping_2d\proto\motion_filter_options.pb.cc">
+      <Filter>Source Files\mapping_2d\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping_2d\proto\map_limits.pb.cc">
+      <Filter>Source Files\mapping_2d\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping\mapping_submaps.cc">
+      <Filter>Source Files\mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping\mapping_sparse_pose_graph.cc">
+      <Filter>Source Files\mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping\sparse_pose_graph\mapping_constraint_builder.cc">
+      <Filter>Source Files\mapping\sparse_pose_graph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping_2d\proto\hybrid_grid.pb.cc">
+      <Filter>Source Files\mapping_2d\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cartographer\mapping_2d\imu_integration.cc">
+      <Filter>Source Files\mapping_2d</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\cartographer\mapping\map_builder.h">
+      <Filter>Source Files\mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cartographer\mapping_2d\global_trajectory_builder.h">
+      <Filter>Source Files\mapping_2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cartographer\mapping_2d\local_trajectory_builder.h">
+      <Filter>Source Files\mapping_2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cartographer\mapping_2d\motion_filter.h">
+      <Filter>Source Files\mapping_2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cartographer\mapping_2d\probability_grid.h">
+      <Filter>Source Files\mapping_2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cartographer\mapping_2d\range_data_inserter.h">
+      <Filter>Source Files\mapping_2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cartographer\mapping_2d\submaps.h">
+      <Filter>Source Files\mapping_2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cartographer\mapping_2d\sparse_pose_graph.h">
+      <Filter>Source Files\mapping_2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cartographer\mapping\mapping_submaps.h">
+      <Filter>Source Files\mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cartographer\mapping\mapping_sparse_pose_graph.h">
+      <Filter>Source Files\mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cartographer\mapping\sparse_pose_graph\mapping_constraint_builder.h">
+      <Filter>Source Files\mapping\sparse_pose_graph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cartographer\kalman_filter\gaussian_distribution.h">
+      <Filter>Source Files\kalman_filter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cartographer\kalman_filter\pose_tracker.h">
+      <Filter>Source Files\kalman_filter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cartographer\kalman_filter\unscented_kalman_filter.h">
+      <Filter>Source Files\kalman_filter</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

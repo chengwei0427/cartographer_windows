@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{74BA4C5D-FC4C-4DC2-8A3F-008CF978D844}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ptCarto</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>../bin</OutDir>
+    <IntDir>../tmp</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\;..\dll-lib-VS15\boost\include;..\dll-lib-VS15\Eigen\include\eigen3;..\dll-lib-VS15\Ceres\include;..\dll-lib-VS15\Eigen\include;..\dll-lib-VS15\gflags\Include;..\dll-lib-VS15\google-glog\include;..\dll-lib-VS15\googletest-distribution\include;..\dll-lib-VS15\protobuf\include;..\dll-lib-VS15\lua\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\dll-lib-VS15\Ceres\lib;..\dll-lib-VS15\gflags\Lib;..\dll-lib-VS15\googletest-distribution\lib;..\dll-lib-VS15\google-glog\lib\debug;..\dll-lib-VS15\protobuf\lib\debug;..\dll-lib-VS15\lua\lib\Debug;..\dll-lib-VS15\boost\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libglog.lib;gflags_static.lib;ceres-debug.lib;libprotobuf.lib;libprotoc.lib;Lua_lib.lib;gmock-gd.lib;gmock_main-gd.lib;gtest-gd.lib;gtest_main-gd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\cartographer\common\ceres_solver_options.cc" />
+    <ClCompile Include="..\cartographer\common\configuration_file_resolver.cc" />
+    <ClCompile Include="..\cartographer\common\fixed_ratio_sampler.cc" />
+    <ClCompile Include="..\cartographer\common\histogram.cc" />
+    <ClCompile Include="..\cartographer\common\lua_parameter_dictionary.cc" />
+    <ClCompile Include="..\cartographer\common\proto\ceres_solver_options.pb.cc" />
+    <ClCompile Include="..\cartographer\common\thread_pool.cc" />
+    <ClCompile Include="..\cartographer\common\time.cc" />
+    <ClCompile Include="..\cartographer\kalman_filter\pose_tracker.cc" />
+    <ClCompile Include="..\cartographer\kalman_filter\proto\pose_tracker_options.pb.cc" />
+    <ClCompile Include="..\cartographer\mapping\collated_trajectory_builder.cc" />
+    <ClCompile Include="..\cartographer\mapping\detect_floors.cc" />
+    <ClCompile Include="..\cartographer\mapping\imu_tracker.cc" />
+    <ClCompile Include="..\cartographer\mapping\map_builder.cc" />
+    <ClCompile Include="..\cartographer\mapping\odometry_state_tracker.cc" />
+    <ClCompile Include="..\cartographer\mapping\probability_values.cc" />
+    <ClCompile Include="..\cartographer\mapping\proto\map_builder_options.pb.cc" />
+    <ClCompile Include="..\cartographer\mapping\proto\sparse_pose_graph.pb.cc" />
+    <ClCompile Include="..\cartographer\mapping\proto\sparse_pose_graph_options.pb.cc" />
+    <ClCompile Include="..\cartographer\mapping\proto\submap_visualization.pb.cc" />
+    <ClCompile Include="..\cartographer\mapping\proto\trajectory.pb.cc" />
+    <ClCompile Include="..\cartographer\mapping\proto\trajectory_builder_options.pb.cc" />
+    <ClCompile Include="..\cartographer\mapping\proto\trajectory_connectivity.pb.cc" />
+    <ClCompile Include="..\cartographer\mapping\mapping_sparse_pose_graph.cc" />
+    <ClCompile Include="..\cartographer\mapping\sparse_pose_graph\mapping_constraint_builder.cc" />
+    <ClCompile Include="..\cartographer\mapping\sparse_pose_graph\optimization_problem_options.cc" />
+    <ClCompile Include="..\cartographer\mapping\sparse_pose_graph\proto\constraint_builder_options.pb.cc" />
+    <ClCompile Include="..\cartographer\mapping\sparse_pose_graph\proto\optimization_problem_options.pb.cc" />
+    <ClCompile Include="..\cartographer\mapping\mapping_submaps.cc" />
+    <ClCompile Include="..\cartographer\mapping\trajectory_builder.cc" />
+    <ClCompile Include="..\cartographer\mapping\trajectory_connectivity.cc" />
+    <ClCompile Include="..\cartographer\mapping_2d\global_trajectory_builder.cc" />
+    <ClCompile Include="..\cartographer\mapping_2d\imu_integration.cc" />
+    <ClCompile Include="..\cartographer\mapping_2d\local_trajectory_builder.cc" />
+    <ClCompile Include="..\cartographer\mapping_2d\motion_filter.cc" />
+    <ClCompile Include="..\cartographer\mapping_2d\proto\cell_limits.pb.cc" />
+    <ClCompile Include="..\cartographer\mapping_2d\proto\hybrid_grid.pb.cc" />
+    <ClCompile Include="..\cartographer\mapping_2d\proto\local_trajectory_builder_options.pb.cc" />
+    <ClCompile Include="..\cartographer\mapping_2d\proto\map_limits.pb.cc" />
+    <ClCompile Include="..\cartographer\mapping_2d\proto\motion_filter_options.pb.cc" />
+    <ClCompile Include="..\cartographer\mapping_2d\proto\probability_grid.pb.cc" />
+    <ClCompile Include="..\cartographer\mapping_2d\proto\range_data_inserter_options.pb.cc" />
+    <ClCompile Include="..\cartographer\mapping_2d\proto\submaps_options.pb.cc" />
+    <ClCompile Include="..\cartographer\mapping_2d\range_data_inserter.cc" />
+    <ClCompile Include="..\cartographer\mapping_2d\ray_casting.cc" />
+    <ClCompile Include="..\cartographer\mapping_2d\scan_matching\ceres_scan_matcher.cc" />
+    <ClCompile Include="..\cartographer\mapping_2d\scan_matching\correlative_scan_matcher.cc" />
+    <ClCompile Include="..\cartographer\mapping_2d\scan_matching\fast_correlative_scan_matcher.cc" />
+    <ClCompile Include="..\cartographer\mapping_2d\scan_matching\fast_global_localizer.cc" />
+    <ClCompile Include="..\cartographer\mapping_2d\scan_matching\proto\ceres_scan_matcher_options.pb.cc" />
+    <ClCompile Include="..\cartographer\mapping_2d\scan_matching\proto\fast_correlative_scan_matcher_options.pb.cc" />
+    <ClCompile Include="..\cartographer\mapping_2d\scan_matching\proto\real_time_correlative_scan_matcher_options.pb.cc" />
+    <ClCompile Include="..\cartographer\mapping_2d\scan_matching\real_time_correlative_scan_matcher.cc" />
+    <ClCompile Include="..\cartographer\mapping_2d\sparse_pose_graph.cc" />
+    <ClCompile Include="..\cartographer\mapping_2d\sparse_pose_graph\constraint_builder.cc" />
+    <ClCompile Include="..\cartographer\mapping_2d\sparse_pose_graph\optimization_problem.cc" />
+    <ClCompile Include="..\cartographer\mapping_2d\submaps.cc" />
+    <ClCompile Include="..\cartographer\sensor\collator.cc" />
+    <ClCompile Include="..\cartographer\sensor\compressed_point_cloud.cc" />
+    <ClCompile Include="..\cartographer\sensor\configuration.cc" />
+    <ClCompile Include="..\cartographer\sensor\ordered_multi_queue.cc" />
+    <ClCompile Include="..\cartographer\sensor\point_cloud.cc" />
+    <ClCompile Include="..\cartographer\sensor\proto\adaptive_voxel_filter_options.pb.cc" />
+    <ClCompile Include="..\cartographer\sensor\proto\configuration.pb.cc" />
+    <ClCompile Include="..\cartographer\sensor\proto\sensor.pb.cc" />
+    <ClCompile Include="..\cartographer\sensor\range_data.cc" />
+    <ClCompile Include="..\cartographer\sensor\voxel_filter.cc" />
+    <ClCompile Include="..\cartographer\transform\proto\transform.pb.cc" />
+    <ClCompile Include="..\cartographer\transform\rigid_transform.cc" />
+    <ClCompile Include="..\cartographer\transform\transform.cc" />
+    <ClCompile Include="..\cartographer\transform\transform_interpolation_buffer.cc" />
+    <ClCompile Include="ptCarto.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\cartographer\kalman_filter\gaussian_distribution.h" />
+    <ClInclude Include="..\cartographer\kalman_filter\pose_tracker.h" />
+    <ClInclude Include="..\cartographer\kalman_filter\unscented_kalman_filter.h" />
+    <ClInclude Include="..\cartographer\mapping\map_builder.h" />
+    <ClInclude Include="..\cartographer\mapping\mapping_submaps.h" />
+    <ClInclude Include="..\cartographer\mapping\mapping_sparse_pose_graph.h" />
+    <ClInclude Include="..\cartographer\mapping\sparse_pose_graph\mapping_constraint_builder.h" />
+    <ClInclude Include="..\cartographer\mapping_2d\global_trajectory_builder.h" />
+    <ClInclude Include="..\cartographer\mapping_2d\local_trajectory_builder.h" />
+    <ClInclude Include="..\cartographer\mapping_2d\motion_filter.h" />
+    <ClInclude Include="..\cartographer\mapping_2d\probability_grid.h" />
+    <ClInclude Include="..\cartographer\mapping_2d\range_data_inserter.h" />
+    <ClInclude Include="..\cartographer\mapping_2d\sparse_pose_graph.h" />
+    <ClInclude Include="..\cartographer\mapping_2d\submaps.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
